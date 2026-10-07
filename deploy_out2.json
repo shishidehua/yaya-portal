@@ -1,0 +1,21 @@
+﻿lark-cli : publishing to app app_17fk529fcb9 (from has_html_app_created)
+所在位置 行:1 字符: 65
++ ... ya_portal"; lark-cli apps +deploy --file-path ./index.html > deploy_o ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (publishing to a...ml_app_created):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+release 7693829431761456393 accepted (status publishing); poll with `lark-cli apps +release-get`
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "app_id": "app_17fk529fcb9",
+    "built": false,
+    "file_count": 2,
+    "poll_hint": "lark-cli apps +release-get --app-id app_17fk529fcb9 --release-id 7693829431761456393",
+    "release_id": "7693829431761456393",
+    "status": "publishing",
+    "zip_size_bytes": 2562
+  }
+}

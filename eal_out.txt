@@ -1,0 +1,1 @@
+﻿EAL gen=35 rules=30

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>牙牙系统门户</title>
+<style>
+:root{
+  --bg:#0b0f14; --panel:#121a24; --line:#1f2c3a; --txt:#d7e2ee; --dim:#7a8ea0;
+  --acc:#3ddad7; --warn:#ffb454; --bad:#ff6b6b; --ok:#4ade80; --gold:#f5c97b;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--txt);font-family:"Segoe UI","Microsoft YaHei",system-ui,sans-serif;min-height:100vh;padding:16px;max-width:640px;margin:0 auto}
+header{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:16px}
+h1{font-size:26px;letter-spacing:2px;color:var(--gold);font-weight:700}
+.sub{color:var(--dim);font-size:12px;margin-top:4px}
+.badge{display:inline-block;padding:2px 10px;border-radius:20px;font-size:11px;margin-left:8px;vertical-align:middle}
+.badge.on{background:rgba(74,222,128,.12);color:var(--ok);border:1px solid rgba(74,222,128,.4)}
+.badge.off{background:rgba(255,107,107,.12);color:var(--bad);border:1px solid rgba(255,107,107,.4)}
+h2{font-size:15px;color:var(--acc);margin:18px 0 10px;letter-spacing:1px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;margin-bottom:12px}
+.row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;font-size:14px;border-bottom:1px dashed rgba(31,44,58,.7)}
+.row:last-child{border-bottom:none}
+.row .k{color:var(--dim)}
+.row .v{font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center;cursor:pointer;transition:transform .15s}
+.card:active{transform:scale(.96)}
+.card .ic{font-size:20px;margin-bottom:6px}
+.card .nm{font-size:13px;color:var(--txt)}
+.card .ds{font-size:10px;color:var(--dim);margin-top:3px}
+a{text-decoration:none;color:inherit}
+.prog{height:6px;background:#0d1318;border-radius:3px;overflow:hidden;margin-top:4px}
+.prog i{display:block;height:100%;background:var(--acc);border-radius:3px}
+footer{margin-top:22px;color:var(--dim);font-size:11px;text-align:center;line-height:1.8;border-top:1px solid var(--line);padding-top:12px}
+</style>
+</head>
+<body>
+<header>
+  <h1>牙牙 · 系统门户<span class="badge on">在线</span></h1>
+  <div class="sub" id="geninfo">全局武器库 · 飞书联动 · 每日播报</div>
+</header>
+
+<h2>系统状态</h2>
+<div class="panel">
+  <div class="row"><span class="k">EAL 进化引擎</span><span class="v">gen 34 · 28 规则</span></div>
+  <div class="row"><span class="k">Kun（DeepSeek 智能体）</span><span class="v" style="color:var(--ok)">运行中 · E盘程序/G盘数据</span></div>
+  <div class="row"><span class="k">飞书桥 · 牙牙</span><span class="v" style="color:var(--ok)">长连接在线</span></div>
+  <div class="row"><span class="k">C 盘剩余</span><span class="v" style="color:var(--warn)">8.8 GB</span></div>
+  <div class="row"><span class="k">G 盘剩余</span><span class="v">12.3 GB</span></div>
+</div>
+
+<h2>每日播报（今日）</h2>
+<div class="panel">
+  <div class="row"><span class="k">考公复习</span><span class="v">按清单推进</span></div>
+  <div class="row"><span class="k">Hermes</span><span class="v" style="color:var(--ok)">cron 完成 · WAL 已修</span></div>
+  <div class="row"><span class="k">AiPy</span><span class="v" style="color:var(--ok)">2.0.1-1</span></div>
+  <div class="row"><span class="k">Loomy 锦囊</span><span class="v">云曦 · 活人化迭代中</span></div>
+</div>
+
+<h2>快捷入口</h2>
+<div class="grid" id="nav"></div>
+
+<h2>项目进度</h2>
+<div class="panel">
+  <div class="row"><span class="k">毕设一条龙</span><span class="v">双方向已交付 · N4 仿真中</span></div>
+  <div class="row"><span class="k">考公第一性原理</span><span class="v">思想库已建</span></div>
+  <div class="row"><span class="k">Hermes 宇宙</span><span class="v">修复完成</span></div>
+</div>
+
+<footer>由全局武器库 AgentWeaponRouter 驱动 · 手机飞书直达 · 生成于 2026-10-07</footer>
+
+<script>
+const NAV = [
+  ["⚙️","武器库导航","G:\\AgentWeaponRouter","https://github.com"],
+  ["🎓","考公学习","第一性原理思想库","https://github.com"],
+  ["🤖","AI 工具","智能体集合","https://github.com"],
+  ["📦","网盘集合","云存储入口","https://github.com"],
+  ["✉️","邮箱","邮件入口","https://github.com"],
+  ["🛠","机械网站","机电资料","https://github.com"],
+  ["🏛","国家知识产权局","专利检索","https://github.com"],
+  ["🎨","成图大赛","赛事信息","https://github.com"],
+  ["🎵","音乐","收藏分类","https://github.com"],
+  ["📚","学习/练习吧","题库练习","https://github.com"]
+];
+const grid = document.getElementById("nav");
+for (const [ic,nm,ds] of NAV) {
+  const a = document.createElement("a");
+  a.className = "card";
+  a.innerHTML = `<div class="ic">${ic}</div><div class="nm">${nm}</div><div class="ds">${ds}</div>`;
+  grid.appendChild(a);
+}
+</script>
+</body>
+</html>

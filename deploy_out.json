@@ -1,0 +1,21 @@
+﻿lark-cli : publishing to app app_17fk529fcb9 (from has_html_app_created)
+所在位置 行:1 字符: 50
++ ... ya_portal"; lark-cli apps +deploy --file-path ./index.html > deploy_o ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (publishing to a...ml_app_created):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+{
+  "ok": false,
+  "identity": "user",
+  "error": {
+    "type": "api",
+    "subtype": "unknown",
+    "code": 400002553,
+    "message": "发布任务已存在",
+    "hint": "verify the app supports artifact-hosting publish; list your apps with `lark-cli apps +list`",
+    "log_id": "202610071540542E63EDAE2389AD46E235",
+    "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202610071
+540542E63EDAE2389AD46E235&code=400002553&method_id=7646418056505183436"
+  }
+}

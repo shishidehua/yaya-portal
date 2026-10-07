@@ -1,0 +1,18 @@
+﻿lark-cli : {
+所在位置 行:1 字符: 270
++ ... ya_portal"; lark-cli im +messages-send --user-id ou_e0e5b9444f57c7936 ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ({:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  "ok": false,
+  "identity": "user",
+  "error": {
+    "type": "validation",
+    "subtype": "invalid_argument",
+    "message": "--markdown: cannot read file \"portal_msg.md （由豆包工作发送）\": GetFileAttributesEx G:\\Dou_Bao_Workplace\\ya
+ya_portal\\portal_msg.md （由豆包工作发送）: The system cannot find the file specified.",
+    "hint": "this flag also reads stdin: pipe the file contents into this command and pass --markdown -",
+    "param": "--markdown"
+  }
+}
